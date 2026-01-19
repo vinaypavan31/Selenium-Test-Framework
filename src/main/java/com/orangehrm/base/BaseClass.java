@@ -84,49 +84,49 @@ public class BaseClass {
 		if (browser.equalsIgnoreCase("chrome")) {
 			
 			//Create ChromeOptions
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");//Run chrome in headless mode
-			options.addArguments("--disable-gpu");//Disable GPU for headless mode
-			//options.addArguments("--window-size=1920,1080");//set window size
-			options.addArguments("--disable-notifications");//disable browser notifications
-			options.addArguments("--no-sandbox");//Required for some CI environments 
-			options.addArguments("--disable -dev-shm-usage");//resolve issues in resource
+			//ChromeOptions options = new ChromeOptions();
+	//	options.addArguments("--headless");//Run chrome in headless mode
+//			options.addArguments("--disable-gpu");//Disable GPU for headless mode
+//			//options.addArguments("--window-size=1920,1080");//set window size
+//			options.addArguments("--disable-notifications");//disable browser notifications
+//			options.addArguments("--no-sandbox");//Required for some CI environments 
+//			options.addArguments("--disable -dev-shm-usage");//resolve issues in resource
 			
 			
 			
 			
 			// driver = new ChromeDriver();
-			driver.set(new ChromeDriver(options));//new changes as per Thread
+			driver.set(new ChromeDriver());//new changes as per Thread
 			ExtentManager.registerDriver(getDriver());
 			logger.info("ChromeDriver instance is created");
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			
 			//Create ChromeOptions
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--headless");//Run firefox in headless mode
-			options.addArguments("--disable-gpu");//Disable GPU for headless mode
-			//options.addArguments("--window-size=1920,1080");//set window size
-			options.addArguments("--disable-notifications");//disable browser notifications
-			options.addArguments("--no-sandbox");//Required for some CI environments 
-			options.addArguments("--disable -dev-shm-usage");//resolve issues in resource
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.addArguments("--headless");//Run firefox in headless mode
+//			options.addArguments("--disable-gpu");//Disable GPU for headless mode
+//			//options.addArguments("--window-size=1920,1080");//set window size
+//			options.addArguments("--disable-notifications");//disable browser notifications
+//			options.addArguments("--no-sandbox");//Required for some CI environments 
+//			options.addArguments("--disable -dev-shm-usage");//resolve issues in resource
 			
 			// driver = new FirefoxDriver();
-			driver.set(new FirefoxDriver(options));
+			driver.set(new FirefoxDriver());
 			ExtentManager.registerDriver(getDriver());
 			logger.info("FirefoxDriver instance is created");
 
 		} else if (browser.equalsIgnoreCase("edge")) {
 			//Create ChromeOptions
-			EdgeOptions options = new EdgeOptions();
-			options.addArguments("--headless");//Run edge in headless mode
-			options.addArguments("--disable-gpu");//Disable GPU for headless mode
-			//options.addArguments("--window-size=1920,1080");//set window size
-			options.addArguments("--disable-notifications");//disable browser notifications
-			options.addArguments("--no-sandbox");//Required for some CI environments 
-			options.addArguments("--disable -dev-shm-usage");//resolve issues in resource
+//			EdgeOptions options = new EdgeOptions();
+//			options.addArguments("--headless");//Run edge in headless mode
+//			options.addArguments("--disable-gpu");//Disable GPU for headless mode
+//			//options.addArguments("--window-size=1920,1080");//set window size
+//			options.addArguments("--disable-notifications");//disable browser notifications
+//			options.addArguments("--no-sandbox");//Required for some CI environments 
+//			options.addArguments("--disable -dev-shm-usage");//resolve issues in resource
 			
 			// driver = new EdgeDriver();
-			driver.set(new EdgeDriver(options));
+			driver.set(new EdgeDriver());
 			ExtentManager.registerDriver(getDriver());
 			logger.info("EdgeDriver instance is created");
 		}

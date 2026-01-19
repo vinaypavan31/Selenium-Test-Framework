@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration status="WARN">
+
+    <appenders>
+
+        <!-- Console Appender -->
+        <console name="Console" target="SYSTEM_OUT">
+            <patternlayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n"/>
+        </console>
+
+        <!-- General File Appender (INFO, WARN only) -->
+        <file name="FileLogger" fileName="logs/app.log" append="true">
+            <filters>
+                <!-- Exclude ERROR and FATAL -->
+                <thresholdfilter level="error"
+                                 onMatch="DENY"
+                                 onMismatch="ACCEPT"/>
+            </filters>
+            <patternlayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n"/>
+        </file>
+
+        <!-- Error File Appender (ERROR only) -->
+        <file name="ErrorFileLogger" fileName="logs/error.log" append="true">
+            <filters>
+                <thresholdfilter level="error"
+                                 onMatch="ACCEPT"
+                                 onMismatch="DENY"/>
+            </filters>
+            <patternlayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n"/>
+        </file>
+
+    </appenders>
+
+    <loggers>
+
+        <!-- Package specific logger -->
+        <logger name="com.demoproject" level="trace" additivity="false">
+            <appenderref ref="Console"/>
+            <appenderref ref="FileLogger"/>
+            <appenderref ref="ErrorFileLogger"/>
+        </logger>
+
+        <!-- ROOT LOGGER (IMPORTANT – fixes the warning) -->
+        <root level="info">
+            <appenderref ref="Console"/>
+            <appenderref ref="FileLogger"/>
+            <appenderref ref="ErrorFileLogger"/>
+        </root>
+
+    </loggers>
+
+</configuration>
