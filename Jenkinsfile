@@ -2,10 +2,6 @@ pipeline {
 
     agent any
 
-    tools {
-        maven 'maven-3.9.12'
-    }
-
     stages {
 
         stage('Checkout') {
@@ -17,6 +13,7 @@ pipeline {
 
         stage('Build') {
             steps {
+                bat 'mvn -version'
                 bat 'mvn clean install'
             }
         }
@@ -26,7 +23,10 @@ pipeline {
                 publishHTML(target: [
                     reportDir: 'src/test/resources/ExtentReports',
                     reportFiles: 'ExtentReport.html',
-                    reportName: 'Extent Spark Report'
+                    reportName: 'Extent Spark Report',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
                 ])
             }
         }
@@ -35,7 +35,7 @@ pipeline {
     post {
 
         always {
-            archiveArtifacts artifacts: '**/src/test/resources/ExtentReports/*.html',
+            archiveArtifacts artifacts: 'src/test/resources/ExtentReports/*.html',
                              fingerprint: true
 
             junit 'target/surefire-reports/*.xml'
@@ -52,21 +52,20 @@ pipeline {
                 <body>
                 <p>Hello Team,</p>
 
-                <p>The latest Jenkins build has completed successfully.</p>
+                <p>The Jenkins build completed successfully.</p>
 
-                <p><b>Project Name:</b> ${env.JOB_NAME}</p>
-                <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
-                <p><b>Status:</b> <span style="color:green;"><b>SUCCESS</b></span></p>
+                <p><b>Project:</b> ${env.JOB_NAME}</p>
+                <p><b>Build:</b> #${env.BUILD_NUMBER}</p>
+                <p><b>Status:</b>
+                   <span style="color:green;"><b>SUCCESS</b></span></p>
+
                 <p><b>Build URL:</b>
                    <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
 
-                <p><b>Commit:</b> ${env.GIT_COMMIT}</p>
-                <p><b>Branch:</b> ${env.GIT_BRANCH}</p>
-
                 <p><b>Extent Report:</b>
-                   <a href="${env.BUILD_URL}HTML_20Extent_20Report/">Click here</a></p>
+                   <a href="${env.BUILD_URL}HTML_20Extent_20Spark_20Report/">Click here</a></p>
 
-                <p>Best regards,<br><b>Automation Team</b></p>
+                <p>Regards,<br><b>Automation Team</b></p>
                 </body>
                 </html>
                 """
@@ -84,22 +83,16 @@ pipeline {
                 <body>
                 <p>Hello Team,</p>
 
-                <p>The Jenkins build has
+                <p>The Jenkins build
                    <span style="color:red;"><b>FAILED</b></span>.</p>
 
                 <p><b>Project:</b> ${env.JOB_NAME}</p>
-                <p><b>Build Number:</b> #${env.BUILD_NUMBER}</p>
+                <p><b>Build:</b> #${env.BUILD_NUMBER}</p>
 
                 <p><b>Build URL:</b>
                    <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
 
-                <p><b>Commit:</b> ${env.GIT_COMMIT}</p>
-                <p><b>Branch:</b> ${env.GIT_BRANCH}</p>
-
-                <p>Please check logs and take action.</p>
-
-                <p><b>Extent Report (if available):</b>
-                   <a href="${env.BUILD_URL}HTML_20Extent_20Report/">Click here</a></p>
+                <p>Please check logs.</p>
 
                 <p>Regards,<br><b>Automation Team</b></p>
                 </body>
