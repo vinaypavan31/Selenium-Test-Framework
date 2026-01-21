@@ -2840,3 +2840,82 @@ Session ID: 4d43355ff859c339923579caa4ffdc65
 2026-01-19 11:54:22 [TestNG-test-OranegHRMTest-4] FATAL BaseClass - fatal message
 2026-01-19 11:54:37 [TestNG-test-OranegHRMTest-3] ERROR BaseClass - errror message
 2026-01-19 11:54:37 [TestNG-test-OranegHRMTest-3] FATAL BaseClass - fatal message
+2026-01-21 10:58:09 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 10:58:09 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 10:58:13 [TestNG-tests-2] ERROR BaseClass - errror message
+2026-01-21 10:58:13 [TestNG-tests-2] FATAL BaseClass - fatal message
+2026-01-21 10:58:20 [TestNG-tests-2] ERROR BaseClass - errror message
+2026-01-21 10:58:20 [TestNG-tests-2] FATAL BaseClass - fatal message
+2026-01-21 10:58:37 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 10:58:37 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 10:58:42 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 10:58:51 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 10:58:51 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 10:58:55 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 10:59:03 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 10:59:03 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 10:59:07 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 10:59:16 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 10:59:16 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 10:59:38 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 10:59:38 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:00:00 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:00:00 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:00:15 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:00:15 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:01:36 [TestNG-tests-2] ERROR BaseClass - errror message
+2026-01-21 11:01:36 [TestNG-tests-2] FATAL BaseClass - fatal message
+2026-01-21 11:01:41 [TestNG-tests-2] ERROR BaseClass - errror message
+2026-01-21 11:01:41 [TestNG-tests-2] FATAL BaseClass - fatal message
+2026-01-21 11:01:41 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:01:41 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:02:03 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:02:03 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:02:06 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 11:02:14 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:02:14 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:02:16 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 11:02:24 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:02:24 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:02:27 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 11:02:35 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:02:35 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:02:55 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:02:55 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:03:14 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:03:14 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:03:26 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:03:26 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:05:57 [TestNG-tests-2] ERROR BaseClass - errror message
+2026-01-21 11:05:57 [TestNG-tests-2] FATAL BaseClass - fatal message
+2026-01-21 11:06:00 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:06:00 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:06:02 [TestNG-tests-2] ERROR BaseClass - errror message
+2026-01-21 11:06:02 [TestNG-tests-2] FATAL BaseClass - fatal message
+2026-01-21 11:06:10 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : janardhan singh not equals Rahul
+2026-01-21 11:06:11 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : tomar not equals Sharma
+2026-01-21 11:06:17 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:06:17 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:06:27 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : janardhan singh not equals Rahul
+2026-01-21 11:06:27 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : tomar not equals Sharma
+2026-01-21 11:06:33 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:06:33 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:06:43 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : janardhan singh not equals Rahul
+2026-01-21 11:06:43 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : tomar not equals Sharma
+2026-01-21 11:06:50 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:06:50 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:06:52 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 11:06:59 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:06:59 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:07:01 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 11:07:07 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:07:07 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:07:10 [TestNG-tests-3] ERROR BaseClass - Text are not matcing : Invalid credentials not equals Invalid credentials1
+2026-01-21 11:07:17 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:07:17 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:07:33 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:07:33 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:07:49 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:07:49 [TestNG-tests-3] FATAL BaseClass - fatal message
+2026-01-21 11:08:00 [TestNG-tests-3] ERROR BaseClass - errror message
+2026-01-21 11:08:00 [TestNG-tests-3] FATAL BaseClass - fatal message

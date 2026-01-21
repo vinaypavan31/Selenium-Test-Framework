@@ -8,7 +8,12 @@
 	<test name="OranegHRMTest">
 
 		<classes>
-
+<class name="com.orangehrm.tests.DummyClass"></class> 
+			<class name="com.orangehrm.tests.DummyClass2"></class>
+			<class name="com.orangehrm.tests.LoginPageTest"></class>
+			<class name="com.orangehrm.tests.HomePageTest"></class>
+			<class name="com.orangehrm.tests.DBVerificationTest"></class>
+			<class name="com.orangehrm.tests.ApiTest"></class>
 			<class name="com.orangehrm.tests.DBVerificationTest"></class>
 		</classes>
 	</test>
