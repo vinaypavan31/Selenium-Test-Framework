@@ -11,7 +11,7 @@ import com.orangehrm.utilities.ExtentManager;
  
 
 public class LoginPageTest extends BaseClass{
-	//new comment added
+	//new comment added--2nd comment
 	private LoginPage loginPage;
 	private HomePage homePage;
 	
